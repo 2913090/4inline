@@ -1,0 +1,3 @@
+﻿  4inLine.cpp
+D:\Magdesyan Kirill C++\4inLine\4inLine.cpp(9,13): warning C4309: инициализация: усечение константного значения
+  4inLine.vcxproj -> D:\Magdesyan Kirill C++\4inLine\x64\Debug\4inLine.exe
