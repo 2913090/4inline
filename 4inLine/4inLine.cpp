@@ -293,9 +293,11 @@ bool checkBot(char** field, char checkSymb, int num) {
 				if (ver < VERTICAL) {
 					if (displacement + hor < HORIZONTAL) {
 						if (field[ver][displacement + hor] == FILL) {
-							if (field[ver + 1][displacement + hor] != FILL) {
-								playerTurn(field, displacement + hor, PLAYER2);
-								return 1;
+							if (ver < VERTICAL) {
+								if (field[ver + 1][displacement + hor] != FILL) {
+									playerTurn(field, displacement + hor, PLAYER2);
+									return 1;
+								}
 							}
 						}
 					}
